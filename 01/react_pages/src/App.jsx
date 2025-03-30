@@ -1,7 +1,23 @@
 import { createElement } from "react";
 import { createRoot } from "react-dom/client";
+import './App.css'
 
 const App = () => {
+  function Header() {
+    const practice = 
+    <header>
+    <img className="react-logo-one" width="40px" src="../src/images/react-logo.png"/>
+    <nav>
+      <ul className="nav-list">
+        <li>Pricing</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header> 
+  return practice
+  }
+
   function MainSection() {
     const addingList = 
     <main>
@@ -14,23 +30,46 @@ const App = () => {
         <li>Powers thousands of enterprise apps, <br /> including mobile apps</li>
       </ul>
     </main>
-
     return addingList;
   }
-  return(
+
+
+
+  function MainContent() {
+    const main =
+    <>
+        <h1>Reasons I am excited</h1>
+        <ol>
+          <li>Sweet</li>
+          <li>Cool</li>
+          <li>Awesome</li>
+        </ol>
+    </>     
+    return main;
+  }
+
+  function Footer() {
+    return (
+      <footer>
+        <small>© 2024 Garcia development. All rights reserved.</small>
+      </footer>
+    )
+  }
+
+  return (
+  <>
+    <Header />
     <MainSection />
+    <MainContent />
+    <Footer />
+  </>
   )
 }
 
 export default App;
 
-
-
-
-
-
-
-
+// What is react Component?
+// A function that returns React elements. (UI)
 
 
 
