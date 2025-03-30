@@ -3,25 +3,8 @@ import { createRoot } from "react-dom/client";
 import './App.css'
 
 const App = () => {
-  function Header() {
-    const practice = 
-    <header>
-    <img className="react-logo-one" width="40px" src="../src/images/react-logo.png"/>
-    <nav>
-      <ul className="nav-list">
-        <li>Pricing</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-  </header> 
-  return practice
-  }
-
   function MainSection() {
     const addingList = 
-    <main>
-      <img width="40px" alt="React Logo" src="../src/images/react-logo.png" />
       <ul>
         <li>Was first release in 2013</li>
         <li>Was originally created by Jordan Walke</li>
@@ -29,11 +12,8 @@ const App = () => {
         <li>Is maintained by Meta</li>
         <li>Powers thousands of enterprise apps, <br /> including mobile apps</li>
       </ul>
-    </main>
     return addingList;
   }
-
-
 
   function MainContent() {
     const main =
@@ -50,7 +30,7 @@ const App = () => {
 
   function Footer() {
     return (
-      <footer>
+      <footer className="footer">
         <small>© 2024 Garcia development. All rights reserved.</small>
       </footer>
     )
@@ -58,7 +38,6 @@ const App = () => {
 
   return (
   <>
-    <Header />
     <MainSection />
     <MainContent />
     <Footer />
