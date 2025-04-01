@@ -15,32 +15,11 @@ const App = () => {
     return addingList;
   }
 
-  function MainContent() {
-    const main =
-    <>
-        <h1>Reasons I am excited</h1>
-        <ol>
-          <li>Sweet</li>
-          <li>Cool</li>
-          <li>Awesome</li>
-        </ol>
-    </>     
-    return main;
-  }
 
-  function Footer() {
-    return (
-      <footer className="footer">
-        <small>© 2024 Garcia development. All rights reserved.</small>
-      </footer>
-    )
-  }
 
   return (
   <>
     <MainSection />
-    <MainContent />
-    <Footer />
   </>
   )
 }
