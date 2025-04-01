@@ -13,19 +13,19 @@ export default [
     {
         img: fluffykins,
         name: "Fluffy Kins",
-        phone: "(212) 555-1234",
-        email: "mr.whiskaz@catnap.meow",
+        phone: "(212) 555-2345",
+        email: "fluff@me.com",
     },
     {
         img: mrwhiskerson,
         name: "Mr. Whiskerson",
-        phone: "(212) 555-1234",
-        email: "mr.whiskaz@catnap.meow",
+        phone: "(212) 555-4567",
+        email: "thecat@hotmail.com",
     },
     {
         img: pumpkin,
         name: "Pumpkin",
-        phone: "(212) 555-1234",
-        email: "mr.whiskaz@catnap.meow",
+        phone: "(0800) CAT KING",
+        email: "pumpkin@scrimba.com",
     }
 ]

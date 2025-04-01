@@ -6,10 +6,12 @@ const Contact = () => {
     function ContactCard(props) {
         return (
             <div className="contact-border">
+                <div>
                 <img src={props.img} />
+                </div>
                 <div>{props.name}</div>
                 <div>{props.email}</div>
-                <div>{props.number}</div>
+                <div>{props.phone}</div>
             </div>
         )
     }
@@ -21,7 +23,7 @@ const Contact = () => {
         img={value.img}
         name={value.name}
         email={value.email}
-        number={value.number}
+        phone={value.phone}
     />
     ))}    
     </>

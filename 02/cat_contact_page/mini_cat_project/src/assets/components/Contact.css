@@ -1,6 +1,6 @@
 .contact-border {
-    background-color: rgba(255, 0, 0, 0.096);
-    display: grid;
-    column-gap: 10px;
+    background-color: red(255, 0, 0, 0.096);
+    display: flex;
+    gap: 20px;
 
 }
