@@ -1,0 +1,27 @@
+.main {
+    padding: 60px 30px;
+    color: white;
+    background-image: url(/src/assets/images/react-background.png);
+    background-repeat: no-repeat;
+    background-position: right 70%;
+}
+
+.title {
+    margin: 0px;
+    font-size: 2.4rem;
+}
+
+.facts-list {
+    margin-top: 46px;
+    max-width: 400px;
+}
+
+.facts-list > li {
+    margin-block: 20px;
+    line-height: 19px;
+}
+
+.facts-list > li::marker {
+    color: #61dafb;
+    font-size: 1.5rem;
+}
