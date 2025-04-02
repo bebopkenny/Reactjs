@@ -5,18 +5,16 @@ import contacts from '../../data/index'
 const Contact = () => {
     function ContactCard(props) {
         return (
-            <div className="contact-border">
-                <div>
-                <img src={props.img} />
-                </div>
-                <div>{props.name}</div>
-                <div>{props.email}</div>
-                <div>{props.phone}</div>
+            < div className="card">
+                <img className="image" src={props.img} />
+                <h3 className="name">{props.name}</h3>
+                <p className="email">{props.email}</p>
+                <p className="phone">{props.phone}</p>
             </div>
         )
     }
   return (
-    <>
+    <div className="contact-wrap">
     {contacts.map((value, index) => (
         <ContactCard 
         key={index}
@@ -24,9 +22,9 @@ const Contact = () => {
         name={value.name}
         email={value.email}
         phone={value.phone}
-    />
-    ))}    
-    </>
+        />
+    ))}
+    </div>
   )
 }
 
