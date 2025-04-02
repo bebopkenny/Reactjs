@@ -1,0 +1,19 @@
+.header {
+    background-color: #4A90E2 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+}
+
+.earth-image {
+    width: 24px;
+    margin-right: 7px;
+}
+
+.header-title {
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 500;
+    font-family: Inter;
+}
