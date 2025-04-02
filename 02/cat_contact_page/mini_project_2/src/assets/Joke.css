@@ -1,0 +1,100 @@
+/* Joke.css */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    margin: 0;
+    padding: 2rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .card {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .container {
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .setup {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.3rem;
+  }
+  
+  .punchline {
+    color: #555;
+    font-style: italic;
+    margin: 0;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-top: 1rem;
+  }
+  
+  /* Fade-in animation */
+  .fade-in {
+    animation: fade 0.5s ease-in-out;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Theme toggle button */
+  .theme-toggle {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #444;
+  }
+  
+  /* Dark mode */
+  body.dark-mode {
+    background-color: #1e1e1e;
+    color: #ddd;
+  }
+  
+  body.dark-mode .card {
+    background-color: #2c2c2c;
+    color: #eee;
+  }
+  
+  body.dark-mode .setup {
+    color: #f0f0f0;
+  }
+  
+  body.dark-mode .punchline {
+    color: #b0b0b0;
+  }
+  
+  body.dark-mode .theme-toggle {
+    background-color: #eee;
+    color: #222;
+  }
+  
