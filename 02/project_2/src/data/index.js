@@ -3,6 +3,8 @@ import kona from '../../src/assets/images/kona.jpg'
 import cdmx from '../../src/assets/images/CDMX.jpg'
 import cancun from '../../src/assets/images/cancun.jpg'
 import oahu from '../../src/assets/images/oahu.webp'
+import vegas from '../../src/assets/images/vegas.jpg'
+import tj from '../../src/assets/images/tj.jpg'
 
 export default [
     {
@@ -49,5 +51,23 @@ export default [
         location: "Mexico City",
         date: "1 Sep, 2022 - 1 Sep, 2022",
         description: "Mexico City is a bustling capital rich with culture, colonial architecture, and vibrant street life. From ancient Aztec ruins to modern museums and cuisine, it’s a dynamic mix of history and innovation.",
+    },
+    {
+        image: tj,
+        country_name: "MEXICO",
+        google_maps_link: 'https://www.google.com/search?q=google+maps+mexico+city&sca_esv=988d71235c9faee3&sxsrf=AHTn8zoiqB0luWZDXKBBoS6UHtoT9HUM9A%3A1743571781953&ei=RcvsZ_H9ObzhkPIPysrSuA0&ved=0ahUKEwixtNCFz7iMAxW8MEQIHUqlFNcQ4dUDCBA&uact=5&oq=google+maps+mexico+city&gs_lp=Egxnd3Mtd2l6LXNlcnAiF2dvb2dsZSBtYXBzIG1leGljbyBjaXR5MgsQABiABBiRAhiKBTIKEAAYgAQYFBiHAjIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkiSJlCdCVjuI3ADeACQAQCYAVSgAegMqgECMjO4AQPIAQD4AQGYAhqgAu8NwgIIEAAYgAQYsAPCAgkQABiwAxgIGB7CAg4QABiABBiwAxiGAxiKBcICCxAAGIAEGLADGKIEwgIKECMYgAQYJxiKBcICFhAuGIAEGLEDGNEDGEMYgwEYxwEYigXCAhAQABiABBixAxhDGIMBGIoFwgILEAAYgAQYsQMYgwHCAg0QABiABBixAxhDGIoFwgIQEAAYgAQYsQMYgwEYFBiHAsICChAAGIAEGEMYigXCAgQQIxgnwgITEAAYgAQYsQMYgwEYFBiHAhjJA8ICCBAAGIAEGLEDwgINEAAYgAQYsQMYFBiHAsICCxAAGIAEGJIDGIoFwgIIEAAYgAQYkgPCAg4QABiABBiRAhixAxiKBZgDAIgGAZAGCJIHAjI2oAeDvwE&sclient=gws-wiz-serp',
+        google_maps: "View on Google Maps",
+        location: "TIJUANA",
+        date: "3 Jul, 2021 - 4 Sep, 2021",
+        description: "Tijuana, Mexico is a bustling border city known for its cultural fusion, lively street scenes, and booming culinary scene. It offers a unique blend of traditional Mexican heritage and modern urban life just south of San Diego.",
+    },
+    {
+        image: vegas,
+        country_name: "United States of America",
+        google_maps_link: 'https://www.google.com/search?q=google+maps+las+vegas&sca_esv=988d71235c9faee3&hl=en&authuser=0&biw=1069&bih=910&sxsrf=AHTn8zqV7TA3rrNSWSb7E80JpktSmivCnw%3A1743572559602&ei=T87sZ8HDJMi4kPIPrMeuqQk&ved=0ahUKEwiBp7j40biMAxVIHEQIHayjK5UQ4dUDCBA&uact=5&oq=google+maps+las+vegas&gs_lp=Egxnd3Mtd2l6LXNlcnAiFWdvb2dsZSBtYXBzIGxhcyB2ZWdhczILEAAYgAQYkQIYigUyBRAAGIAEMgsQABiABBiRAhiKBTILEAAYgAQYkQIYigUyCxAuGIAEGMcBGK8BMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIvD9QmidYvz1wBHgEkAEAmAHRAaABoBGqAQU5LjguMbgBA8gBAPgBAZgCGaACyRLCAgQQABhHwgIKEAAYsAMY1gQYR8ICChAjGIAEGCcYigXCAhMQABiABBixAxhDGIMBGMkDGIoFwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICEBAAGIAEGLEDGEMYgwEYigXCAggQABiABBixA8ICCxAAGIAEGJIDGIoFwgIIEAAYgAQYkgPCAg4QLhiABBjHARiOBRivAcICFBAuGIAEGJECGMcBGIoFGI4FGK8BmAMAiAYBkAYIkgcGMTYuNy4yoAfirQE&sclient=gws-wiz-serp',
+        google_maps: "View on Google Maps",
+        location: "Las Vegas",
+        date: "15 Jul, 2021 - 16 Jul, 2021",
+        description: "Las Vegas is a world-famous city in Nevada known for its vibrant nightlife, luxurious casinos, and dazzling entertainment shows. Nicknamed 'The Entertainment Capital of the World,' it offers an unforgettable experience of lights, music, and high-energy attractions.",
     },
 ]

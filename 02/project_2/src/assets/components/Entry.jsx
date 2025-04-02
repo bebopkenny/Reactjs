@@ -17,13 +17,12 @@ const Entry = () => {
                 </a>
               </div>
               <h3>{props.location}</h3>
-              <h4>{props.date}</h4>
+              <h4>{props.date}</h4>    
               <p>{props.description}</p>
             </div>
           </div>
         )
       }
-      
 
     return (
         <div className="container-wrapper">
