@@ -5,7 +5,7 @@ import './Header.css'
 const Header = () => {
   return (
     <div className="header">
-        <img className="logo" src={ratatouille} />
+        <img className="logo" src={ratatouille} alt="Chef logo"/>
         <h1 className="title">Chef Claude</h1>
     </div>
   )
