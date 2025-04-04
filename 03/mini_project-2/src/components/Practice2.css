@@ -1,0 +1,98 @@
+/* Practice2.css */
+
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); }
+    50% { transform: scale(1.02); box-shadow: 0 0 25px rgba(255, 80, 80, 0.25); }
+    100% { transform: scale(1); box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); }
+  }
+  
+  @keyframes orbit {
+    0% { transform: rotate(0deg) translateX(5px) rotate(0deg); }
+    100% { transform: rotate(360deg) translateX(5px) rotate(-360deg); }
+  }
+  
+  .container {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top, #fff 0%, #f4f4f4 100%);
+    padding: 60px 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 100px auto;
+    width: 500px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    animation: pulse 5s infinite;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #e2e2e2f3;
+    text-shadow: 0 0 5px rgba(255,255,255,0.3), 0 0 15px rgba(255, 75, 43, 0.6);
+    animation: fadeInDown 0.8s ease-out;
+  }
+  
+  .counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .count {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #222;
+    background: radial-gradient(circle, #fff 30%, #eee 100%);
+    padding: 20px 40px;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  button {
+    background-color: #141413;
+    color: #FAFAF8;
+    font-family: inherit;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  button::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 16px;
+    background: rgba(255, 94, 0, 0.2);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.3s ease;
+    animation: orbit 2s linear infinite;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    background-color: #ff5e00;
+  }
+  
+  button:hover::before {
+    opacity: 1;
+  }
+  
+  .plus:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 94, 0, 0.3);
+  }
+  
+  .minus:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 0, 85, 0.3);
+  }
+  
