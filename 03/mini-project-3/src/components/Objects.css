@@ -1,0 +1,55 @@
+.card {
+    display: flex;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 24px;
+    margin: 20px auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    max-width: 600px;
+    width: 90%;
+  }
+  
+  .avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #3f51b5;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .name {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 6px;
+  }
+  
+  .contact {
+    font-size: 0.95rem;
+    color: #bbbbbb;
+    margin: 2px 0;
+  }
+  
+  .favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-bottom: 8px;
+  }
+  
+  .favorite {
+    width: 28px;
+    transition: transform 0.2s ease;
+  }
+  
+  .favorite-button:hover .favorite {
+    transform: scale(1.1);
+  }
+  
