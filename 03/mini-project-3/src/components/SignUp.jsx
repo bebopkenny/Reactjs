@@ -3,21 +3,34 @@ import React from 'react'
 
 const SignUp = () => {
 
-    function signUp(event) { // much faster and cleaner way to capture the email and send it to a database 
-        event.preventDefault();
-        const formData = new FormData(event.currentTarget);
-        let user_email = formData.get("email")
-        let user_password = formData.get("password")
-        let employmentStatus = formData.get("employmentStatus")
-        let dietaryRestrictions = formData.getAll("dietaryRestrictions")
-        let favGame = formData.get("favGame")
-        
-        console.log(user_email)
-        console.log(user_password)
-        console.log(dietaryRestrictions)
-        console.log(employmentStatus)
-        console.log(favGame)
+  function signUp(event) { // much faster and cleaner way to capture the email and send it to a database 
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget) // grabs the data from all the entries
+    console.log(Object.fromEntries(formData))
+    const data = Object.fromEntries(formData)   // saves the data of all entries as a data object
+    const dietaryData = formData.getAll("dietaryRestrictions") // grabs the info from the check box
+    const allData = { // creates a new object with all data and dietRestrictions into one object
+      ...data,
+      dietaryRestrictions: dietaryData // replaces what hte old diet checkbox was and sets it as the new options
     }
+    console.log(allData)
+    
+    /*
+      event.preventDefault();
+      const formData = new FormData(event.currentTarget);
+      let user_email = formData.get("email")
+      let user_password = formData.get("password")
+      let employmentStatus = formData.get("employmentStatus")
+      let dietaryRestrictions = formData.getAll("dietaryRestrictions")
+      let favGame = formData.get("favGame")
+      
+      console.log(user_email)
+      console.log(user_password)
+      console.log(dietaryRestrictions)
+      console.log(employmentStatus)
+      console.log(favGame)
+    */
+  }
 
 
 
