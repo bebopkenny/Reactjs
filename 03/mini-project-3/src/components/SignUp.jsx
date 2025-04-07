@@ -10,10 +10,13 @@ const SignUp = () => {
         let user_password = formData.get("password")
         let employmentStatus = formData.get("employmentStatus")
         let dietaryRestrictions = formData.getAll("dietaryRestrictions")
+        let favGame = formData.get("favGame")
+        
         console.log(user_email)
         console.log(user_password)
         console.log(dietaryRestrictions)
         console.log(employmentStatus)
+        console.log(favGame)
     }
 
 
@@ -65,6 +68,16 @@ const SignUp = () => {
               </label>
             </fieldset>
             
+            <label htmlFor="favGame">What is your favorite video game?</label>
+            <select id="favGame" name="favGame" defaultValue="" required>
+            <option value="" disabled>-- Choose your favorite game --</option>
+              <option value="lol">League of Legends</option>
+              <option value="mc">Minecraft</option>
+              <option value="bo1">Black Ops</option>
+              <option value="bo2">Black Ops 2</option>
+              <option value="halo">Halo Reach</option>
+            </select>
+
             <button>Submit</button>
         </form>
     </section>
