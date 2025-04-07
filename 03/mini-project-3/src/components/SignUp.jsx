@@ -8,12 +8,15 @@ const SignUp = () => {
         const formData = new FormData(event.currentTarget);
         let user_email = formData.get("email")
         let user_password = formData.get("password")
+        let employmentStatus = formData.get("employmentStatus")
+        let dietaryRestrictions = formData.getAll("dietaryRestrictions")
+        console.log(user_email)
+        console.log(user_password)
+        console.log(dietaryRestrictions)
+        console.log(employmentStatus)
     }
 
-    function employmentStatus(event) {
-      const selected = event.target.value; // gets the value from the selected radio
-      console.log("Employment status: ", selected);
-    }
+
 
   return ( // Don't forget to add a function to action for this to work  
     <section>
@@ -33,16 +36,32 @@ const SignUp = () => {
             <fieldset>
               <legend>Employment Status:</legend>
               <label>
-                <input onChange={employmentStatus} type="radio" name="employmentStatus" value="unemployed"/>
+                <input type="radio" name="employmentStatus" value="unemployed"/>
                 Unemployed
               </label>
               <label>
-                <input onChange={employmentStatus} type="radio" name="employmentStatus" value="part-time"/>
+                <input type="radio" name="employmentStatus" value="part-time"/>
                 Part-Time
               </label>
               <label>
-                <input onChange={employmentStatus} type="radio" name="employmentStatus" value="full-time"/>
+                <input type="radio" name="employmentStatus" value="full-time" defaultChecked={true}/>
                 Full-Time
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Dietary Restrictions:</legend>
+              <label>
+                <input type="checkbox" name="dietaryRestrictions" value="kosher"/>
+                Kosher
+              </label>
+              <label>
+                <input type="checkbox" name="dietaryRestrictions" value="vegan"/>
+                Vegan
+              </label>
+              <label>
+                <input type="checkbox" name="dietaryRestrictions" value="gluten-free" defaultChecked={true}/>
+                Gluten-Free
               </label>
             </fieldset>
             
@@ -56,6 +75,10 @@ export default SignUp
 
 
 
+    // function employmentStatus(event) {
+    //   const selected = event.target.value; // gets the value from the selected radio
+    //   console.log("Employment status: ", selected);
+    // }
 
 
 /*
