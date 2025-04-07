@@ -1,0 +1,52 @@
+/* Joke.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: #1c1c1c;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 24px;
+  transition: box-shadow 0.2s ease;
+}
+
+.container:hover {
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+}
+
+.setup {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #90caf9;
+}
+
+.punchline {
+  font-size: 1rem;
+  margin-top: 12px;
+  color: #ffffff;
+}
+
+.joke-button {
+  padding: 10px 18px;
+  font-size: 1rem;
+  background: linear-gradient(145deg, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 8px;
+  color: #0f0f0f;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.joke-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00c6ff;
+}
