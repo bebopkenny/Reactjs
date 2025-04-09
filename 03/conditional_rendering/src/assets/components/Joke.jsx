@@ -12,9 +12,14 @@ const Joke = () => {
         }
         return (
             <div className="container">
-                <h3 className="setup">{props.setup}</h3>
+                {/* <h3 className="setup">{props.setup}</h3>
                 <button className="joke-button" onClick={toggleJoke}>Click on joke</button>
                 {isShown === true && <p className="punchline">{props.punchline}</p>}
+                {!isShown && <button className="joke-button" onClick={toggleJoke}>Hide joke</button>}
+             */}
+                {props.setup ? <h3 className="setup">{props.setup}</h3> : null}
+                {isShown ? <p className="setup">{props.punchline}</p> : null}
+                <button className="joke-button" onClick={toggleJoke}>{isShown ? "Hide" : "Show"} on button</button>
             </div>
         )
 
