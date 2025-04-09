@@ -1,10 +1,13 @@
 import './Practice2.css'
 import { useState } from 'react'
+import Count from './Count'
 
 import React from 'react'
 
 const Practice2 = () => { 
     let [count, setCount] = useState(0);
+
+
 
     function add() {
         setCount(prevCount => prevCount + 1)
@@ -22,9 +25,7 @@ const Practice2 = () => {
     <main className="container">
         <h1>How many times will Bob say "state" in this section?</h1>
         <div className="counter">
-            <button className="minus" onClick={minus} aria-label="Decrease count">-</button>
-            <h2 className="count">{count}</h2>
-            <button className="plus" onClick={add} aria-label="Increase count">+</button>
+            <Count number={count}/>
         </div>
     </main>
   )
