@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState } from 'react'
 import avatar from './avatar-15.png'
+import './Header.css'
 
-const Header = () => {    
-    const [userName, setUserName] = useState("Jose"); 
+const Header = ({userName}) => {    
 
   return (
-    <header>
+    <header className="header-section">
         <img src={avatar} />
         <p>{userName}</p>
     </header>

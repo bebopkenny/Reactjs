@@ -1,0 +1,25 @@
+/* === HEADER SECTION STYLES === */
+.header-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #2a2f3a; /* ✅ dark gray-blue for contrast */
+    color: #f0f0f0;
+    padding: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.header-section img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fff; /* Optional: white background behind avatar */
+    padding: 2px; /* Optional: creates space around image */
+}
+
+.header-section p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+}
