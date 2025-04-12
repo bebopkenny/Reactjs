@@ -1,0 +1,29 @@
+/* Set up the overall layout */
+.pad-container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px); /* 4 buttons per row */
+    gap: 12px;
+    justify-content: center;
+    padding: 40px;
+    background-color: #111; /* dark background */
+  }
+  
+  /* Button base style */
+  button {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    transition: transform 0.15s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    opacity: 25%;
+  }
+  
+  /* Button "on" state for glowing effect */
+  .on {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+    opacity: 10000%;
+  }
+  

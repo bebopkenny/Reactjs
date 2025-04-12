@@ -4,7 +4,7 @@ import './Body.css'
 
 const Body = ({ userName }) => {
   return (
-    <section classname="welcome-section">
+    <section className="welcome-section">
         <h1>Welcome back, {userName}!</h1>
     </section>
   )
