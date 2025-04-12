@@ -11,7 +11,7 @@ const Pad = (props) => {
  
     return (
     <button
-        onClick={toggleSwitch}
+        onClick={props.toggle}
         className={flipSwitch === true ? "on" : "off"} 
         style={{backgroundColor: props.color}}
     ></button>
