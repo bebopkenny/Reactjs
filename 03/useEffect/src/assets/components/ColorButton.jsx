@@ -30,6 +30,11 @@ const MyComponents = () => {
     // useEffect(function, [dependencies]);
     useEffect(() => {
         document.title = `Count: ${count} ${color}` // title will update and say color
+        
+        return () => {
+            // SOME CLEANUP CODE
+        }
+
     }, [count, color]);
 
 
